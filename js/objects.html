@@ -3,15 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Learning javascript</title>
+    <script src="js/objects.js"></script>
+    <script>let agedPerson = new AgedPerson();</script>
   </head>
   <body>
     
       <!-- always include javascript code in script tags-->  
       <script>
-          var aplha = "ABCDEFG" // much similar to strings in python python     
-          var len = alpha.length;
-          document.write("lenght");
-          var a = new Array("cat", "dog", 53, true); // can hold multiple data types, as lists in python
+            agedPerson.name = window.prompt("Please enter name");   // var myVar = window.prompt("write something ...");
+            agedPerson.surname = window.prompt("Please enter surname");
+            if (agedPerson.name == null || agedPerson.surname == null) {
+                window.document.write("Failed to obtain name or surname");
+            } else {
+                agedPerson.writePerson();
+            }
       </script>
   </body>
 </html>

@@ -10,11 +10,18 @@
         document.write()
         var myVar;
         myVar = 5; // now it's a number
-        document.write("<p>" + myVar + "</p>"); // document.write will convert the input to a string
+        document.write("<p>" + (myVar + 1) + "</p>"); // document.write will convert the input to a string
+        myVar = "5";
+        document.write("<p>" + (myVar + 1) + "</p>"); 
+        var result = parseInt(myVar + 1, 10);
+        result2 = result + 1;
+        document.write("<p>" + result2 + "</p>"); 
+        /*
         myVar = "hello"; // now it's a string
         document.write("<p>" + myVar + "</p>");
         myVar = true; // now it's boolean
-        document.write("<p>" + myVar + "</p>");        
+        document.write("<p>" + myVar + "</p>");
+        */
     </script>
   </body>
 </html>

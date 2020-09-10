@@ -9,9 +9,23 @@
     
       <!-- always include javascript code in script tags-->  
       <script>
-          for (i = 0; i < 5; i ++){
+          /*for (i = 0; i < 5; i ++){
               document.write(i + "<br>");
           }
+          */
+          var i = 6;
+          while(i < 5){
+              document.write("while: ");
+              document.write(i + "<br>");
+              i ++;
+          }
+          i = 6;
+          do {                          
+              document.write("do while: ");
+              document.write(i + "<br>");
+              i ++; 
+          } while (i < 5);
+          
       </script>
   </body>
 </html>
