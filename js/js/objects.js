@@ -1,9 +1,17 @@
 /*eslint-env browser*/
 
+// var personNameJohn = "john";
+// var personHeigthJohn = 180;
+// var personWeigthJohn = 80;
+
+// function talkToPerson(person, ...){ ... };
+
 class Person {
+    // properties
     name;
-    width;
+    surname;
     
+    // methods
     constructor(){}
     writePerson(){
         document.write("Name: " + this.name + "<br>");
@@ -12,7 +20,7 @@ class Person {
 }
 
 class AgedPerson extends Person {
-    age;
+    age;    // nuova proprietà aggiunta dal sottotipo
     constructor(){
         super();
         this.age = 7;
