@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>drag and drop</title>
+        <link rel="stylesheet" href="css/dragandDrop.css">
+        <script src="js/dragAndDrop.js"></script>
+    </head>
+    <body>
+        <h1>Drag and Drop</h1>
+        <p>Hover your mouse on the image below, hold it down and then move it to drag the image around. Release the mouse to drop the image. </p>
+        <img class="drag" id="imgCase" src="assets/elegante-valigetta_318-9797.jpg" onload="onLoad(event)">
+        <script>
+            window.document.onmousemove = onMouseMove;
+            window.document.onmouseup = onMouseUp;
+        </script>
+    </body>
+</html>
