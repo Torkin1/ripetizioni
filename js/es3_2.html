@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function interruttore(){
+                // Identificare il valore dentro pSwitch    
+                var val = window.document.getElementById("pSwitch").innerHTML;
+                
+                // Capire se è ON o OFF
+                if (val == "ON"){
+                    
+                    // Cambiamo il testo di pSwitch in OFF
+                    window.document.getElementById("pSwitch").innerHTML = "OFF";
+                } else{
+                    
+                    // Cambiamo Cambiamo il testo di pSwitch in ON
+                    window.document.getElementById("pSwitch").innerHTML = "ON";
+                }
+            
+                // window.document.getElementById("pSwitch").innerHTML = (val == "ON")? "OFF" : "ON"
+            }
+        </script>
+    </head>
+    <body>
+        <p id="pSwitch" onmouseover="interruttore();"> OFF </p>
+    </body>
+</html>

@@ -12,7 +12,7 @@ function onMouseDown(event){
     objFromPointerY = event.pageY - obj.offsetTop;
 }
 
-function onMouseMove(event){
+function onMouseMove(event){    // eslint-disable-line no-unused-vars
     // until we click on the object, obj remains null
     if (obj != null){
         obj.style.left = (event.pageX - objFromPointerX) + "px";
@@ -20,11 +20,11 @@ function onMouseMove(event){
     }
 }
 
-function onMouseUp(){
+function onMouseUp(){   // eslint-disable-line no-unused-vars
     obj = null;
 }
 
-function onLoad(){
+function onLoad(){  // eslint-disable-line no-unused-vars
     imgCase = window.document.getElementById("imgCase");
     imgCase.style.setPosition = "absolute";
     imgCase.ondragstart = function(){ return false; };

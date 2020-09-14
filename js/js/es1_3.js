@@ -13,7 +13,9 @@ while ((input = window.prompt("Please enter a value")) != null){
        countDown ++;
     } else if (inputNum > x){
        countUp ++; 
-    } else{}    // inputNum = x
+    } else{
+       null
+    }    // inputNum = x
 }
 
 document.write("<p> countUp is: " + countUp + "</p>");
