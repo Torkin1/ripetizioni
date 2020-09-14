@@ -1,1 +1,11 @@
-# ripetizioni
+# ripetizioni-examples
+
+Here you can find some examples which can be used for computer science lessons.
+
+## cpp
+
+Examples written in C ++
+
+## js
+
+Examples of HTML pages which use javascript in order to show some nice things. Sometimes some CSS is added in order to show even nicer effects.

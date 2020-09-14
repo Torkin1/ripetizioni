@@ -27,7 +27,7 @@ class FlyingMachine extends FlyingObject{
         isOn = false;
     }
     fly(){
-        if (isOn){
+        if (isOn/* == true */){
             super.fly();
         }
     }
